@@ -1,9 +1,6 @@
 name: Python Hello World
 
-on:
-  push:
-    branches:
-      - main
+on: [push]
 
 jobs:
   build:
@@ -18,22 +15,6 @@ jobs:
       with:
         python-version: 3.x  # Use the desired Python version
 
-  test:
-    needs: build
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Check Out Code
-      uses: actions/checkout@v2
-
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.x  # Use the desired Python version
-
-    - name: Install Dependencies
-      run: pip install -r requirements.txt  # If you have any dependencies
-
-    - name: Run Tests
+    - name: Run Python Script
       run: |
-        python helloworld.py  # Adjust the path and command as needed
+        python helloworld.py
