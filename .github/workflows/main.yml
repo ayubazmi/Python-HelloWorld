@@ -39,8 +39,4 @@ jobs:
 
     - name: Run Tests
       run: |
-        if python test_hello_world.py; then
-          echo "Test complete"
-        else
-          echo "Error occurred"
-        fi
+        python test_hello_world.py
