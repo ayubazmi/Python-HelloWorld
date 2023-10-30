@@ -39,4 +39,4 @@ jobs:
 
     - name: Run Tests
       run: |
-        python test_hello_world.py
+        python test/test_hello_world.py
