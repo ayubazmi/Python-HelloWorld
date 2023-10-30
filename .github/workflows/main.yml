@@ -17,4 +17,4 @@ jobs:
 
     - name: Run Python Script
       run: |
-        python hello_world.py
+        python helloworld.py
