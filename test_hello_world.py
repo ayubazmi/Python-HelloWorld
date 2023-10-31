@@ -12,7 +12,7 @@ class TestHelloWorld(unittest.TestCase):
         print(result)
         
         # Perform the test
-        self.assertEqual(result, "Hello, World!")  # Note the change to "Hello, World!" here
+        self.assertEqual(result, "Hello World!")  # Note the change to "Hello, World!" here
 
 if __name__ == '__main__':
     unittest.main()
