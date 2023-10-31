@@ -3,7 +3,7 @@ from io import StringIO
 import sys
 
 def hello_world():
-    return "Hello, World!"
+    return "Hello World!"
 
 class TestHelloWorld(unittest.TestCase):
     def test_hello_world_output(self):
