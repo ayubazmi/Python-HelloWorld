@@ -34,12 +34,5 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest and Show Output
       run: |
-        test_output=$(python -m pytest -s test_hello_world.py 2>&1)
-        if echo "$test_output" | grep -q "Hello, World!"; then
-          echo "Test succeeded"
-          echo "Test Output: $test_output"
-          exit 0
-        else
-          echo "Test failed"
-          echo "Test Output: $test_output"
-          exit 1
+        python -m pytest -s test_hello_world.py
+
