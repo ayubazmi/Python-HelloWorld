@@ -1,8 +1,5 @@
 import unittest
 
-def hello_world():
-    return "Hello, World!"
-
 class TestHelloWorld(unittest.TestCase):
     def test_hello_world_output(self):
         # Call the hello_world function and capture the result
