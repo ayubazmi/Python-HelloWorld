@@ -35,4 +35,10 @@ jobs:
         output=$(python -m pytest -s test_hello_world.py 2>&1)
         echo "::group::Test Output"
         echo "$output"
+        if [[ $output == *"1 passed"* ]]; then
+          echo "Test case passed"
+        else
+          echo "Test case failed"
+          exit 1
+        fi
         echo "::endgroup::"
