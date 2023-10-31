@@ -1,11 +1,12 @@
 import unittest
-from hello_world import say_hello  # Import the function to be tested
+import xmlrunner
+
+def hello_world():
+    return "Hello, World!"
 
 class TestHelloWorld(unittest.TestCase):
-
-    def test_hello_world_presence(self):
-        result = say_hello()
-        self.assertIn("Hello World!", result)
+    def test_hello_world_output(self):
+        self.assertEqual(hello_world(), "Hello, World!")
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main(testRunner=xmlrunner.XMLTestRunner(output='test-reports'))
