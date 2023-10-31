@@ -33,6 +33,5 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest and Show Output
       run: |
-        python -m pytest -s test_hello_world.py
-
-  
+        output=$(python -m pytest -s test_hello_world.py 2>&1)
+        echo "$output"
