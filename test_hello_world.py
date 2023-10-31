@@ -9,7 +9,7 @@ class TestHelloWorld(unittest.TestCase):
         result = hello_world()
 
         # Perform the test
-        self.assertEqual(result, "Hello World!")  # Note the change to "Hello, World!" here
+        self.assertEqual(result, "Hello, World!")  # Note the change to "Hello, World!" here
 
         # If the test case fails, print "gta"
         if result != "Hello, World!":
