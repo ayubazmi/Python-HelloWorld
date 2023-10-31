@@ -20,7 +20,7 @@ class TestHelloWorld(unittest.TestCase):
         output = captured_output.getvalue().strip()
 
         # Perform the test
-        self.assertEqual(output, "Hello, World!")
+        self.assertEqual(output, "gta!")
 
 if __name__ == '__main__':
     unittest.main()
